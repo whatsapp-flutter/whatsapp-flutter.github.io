@@ -7,7 +7,8 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <p align="center"><img src="https://raw.githubusercontent.com/rohit-chouhan/whatsapp/main/img/banner.png"/></p>
-WhatsApp API package for flutter, to send message and product information.
+
+This Flutter package allows you to integrate the WhatsApp Business API into your Flutter applications, enabling features such as sending `messages`, `media`, `templates`, `business information`, `interactives`, and more.
 
 ![Pub Likes](https://img.shields.io/pub/likes/whatsapp)
 ![Pub Points](https://img.shields.io/pub/points/whatsapp)
