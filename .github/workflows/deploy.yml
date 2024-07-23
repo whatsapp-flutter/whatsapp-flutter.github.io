@@ -23,6 +23,11 @@ jobs:
       - name: Build Docusaurus site
         run: npm run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "itsrohitofficial@gmail.com"
+          git config --global user.name "Rohit Chouhan"
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
