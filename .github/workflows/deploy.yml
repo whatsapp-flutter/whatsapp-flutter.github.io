@@ -28,6 +28,10 @@ jobs:
           git config --global user.email "itsrohitofficial@gmail.com"
           git config --global user.name "Rohit Chouhan"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          echo "Git configuration:"
+          git config --list
+          echo "Git remote URL:"
+          git remote -v
 
       - name: Deploy to GitHub Pages
         env:
