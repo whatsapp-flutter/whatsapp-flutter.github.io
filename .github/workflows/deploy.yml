@@ -29,8 +29,8 @@ jobs:
           git config --global user.name "Rohit Chouhan"
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy
         env:
           GIT_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USE_SSH: false # Ensure this is set to false if not using SSH
+        run: |
+          npx docusaurus deploy --access-token ${GITHUB_TOKEN}
