@@ -7,8 +7,8 @@ Send a document to the specified phone number using direct document url.
 ```dart
 await whatsapp.sendDocumentById(
   phoneNumber : 'PHONE_NUMBER',
-  documentUrl :  'https://example.com/file.pdf',
-  caption : 'WhatsApp Flutter Docs File',
+  documentUrl :  'https://whatsapp-flutter.github.io/samples/whatsapp-flutter.pdf',
+  caption : 'WhatsApp Flutter Package PDF',
   fileName: 'whatsapp-flutter.pdf'
 );
 ```

@@ -1,6 +1,6 @@
 ---
 title: 🗂️ Get Media Details
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 Get uploaded media details using Media Id

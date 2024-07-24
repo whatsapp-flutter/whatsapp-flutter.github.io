@@ -7,8 +7,8 @@ Send a message to the specified phone number using direct image url.
 ```dart
 await whatsapp.sendImageByUrl(
   phoneNumber : 'PHONE_NUMBER',
-  imageUrl : 'https://example.com/example.jpg',
-  caption : 'My fav photo.',
+  imageUrl : 'https://whatsapp-flutter.github.io/samples/whatsapp-flutter.jpg',
+  caption : 'WhatsApp Flutter Package Photo',
 );
 ```
 

@@ -6,8 +6,8 @@ sidebar_position: 3
 Send a contact details to the specified phone number
 
 ```dart
-await client.sendContactDetails(
-    phoneNumber: phoneNumber,
+await whatsapp.sendContactDetails(
+    phoneNumber: 'PHONE_NUMBER',
     dateOfBirth: "1990-01-01",
     addresses: [{
         "street": "Ajmer",

@@ -9,7 +9,7 @@ await whatsapp.sendCallToActionButton(
     phoneNumber: phoneNumber,
     headerText: "HEADER",
     bodyText: "Please have a look to my website.",
-    footerText:"FOOTER"
+    footerText:"FOOTER",
     buttonText: "Open",
     actionUrl: "https://rohitchouhan.com",
 );

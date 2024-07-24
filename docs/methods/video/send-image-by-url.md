@@ -7,8 +7,8 @@ Send a video to the specified phone number using direct video url.
 ```dart
 whatsapp.sendImageByUrl(
   phoneNumber : 'PHONE_NUMBER',
-  videoUrl : 'https://example.com/example.mp4',
-  caption : 'My fav video.',
+  videoUrl : 'https://whatsapp-flutter.github.io/samples/whatsapp-flutter.mp4',
+  caption : 'WhatsApp Flutter Package Video',
 );
 ```
 

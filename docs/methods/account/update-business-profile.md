@@ -6,18 +6,18 @@ sidebar_position: 2
 Update your whatsapp business profile details
 
 ```dart
-await whatsapp.updateBusinessProfile({
+await whatsapp.updateBusinessProfile(
     about: "Welcome to my shop.",
     address: "Ajmer, Rajasthan",
     description: "We sell any kind of toys.",
-    industry: "TOY",
+    industry: "OTHER",
     email: "buy@example.com",
     websites: [
         "https://example.com",
         "https://demo.com"
     ],
     profilePictureHandle: "profilePictureHandle",
-});
+);
 ```
 
 | param                  | type           | required | description                 |
@@ -29,3 +29,27 @@ await whatsapp.updateBusinessProfile({
 | `email`                | String         | no       | Your Business Email Address |
 | `website`              | List\<String\> | no       | Your Business Websites      |
 | `profilePictureHandle` | String         | no       | Business Profile Pic        |
+
+## Supported Industry
+
+- OTHER
+- AUTO
+- BEAUTY
+- APPAREL
+- EDU
+- ENTERTAIN
+- EVENT_PLAN
+- FINANCE
+- GROCERY
+- GOVT
+- HOTEL
+- HEALTH
+- NONPROFIT
+- PROF_SERVICES
+- RETAIL
+- TRAVEL
+- RESTAURANT
+- ALCOHOL
+- ONLINE_GAMBLING
+- PHYSICAL_GAMBLING
+- OTC_DRUGS

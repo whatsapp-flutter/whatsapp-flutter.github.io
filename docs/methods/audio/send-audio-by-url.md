@@ -7,7 +7,7 @@ Send a audio to the specified phone number using direct audio link.
 ```dart
 await whatsapp.sendAudioByUrl(
   phoneNumber : 'PHONE_NUMBER',
-  audioUrl : 'https://example.com/example.mp3',
+  audioUrl : 'https://whatsapp-flutter.github.io/samples/whatsapp-flutter.mp3',
 );
 ```
 
