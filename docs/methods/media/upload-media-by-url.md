@@ -7,7 +7,7 @@ Upload a Media File to Business Account by Url
 
 ```dart
 var upload = await whatsapp.uploadMediaFileByUrl(
-  fileUrl: 'https://example.com/sample.jpeg',
+  fileUrl: 'https://whatsapp-flutter.github.io/samples/whatsapp-flutter.jpg',
   fileType: 'image/jpeg',
 );
 
