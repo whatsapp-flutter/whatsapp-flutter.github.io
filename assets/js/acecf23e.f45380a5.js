@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwhatsapp_flutter=self.webpackChunkwhatsapp_flutter||[]).push([[1903],{1912:t=>{t.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog","authorsListPath":"/blog/authors"}')}}]);
