@@ -3,7 +3,6 @@ name: Build-Deploy to gh-pages
 on:
   push:
     branches: [main]
-    paths: [docs/**]
 
 jobs:
   deploy:
