@@ -1,19 +1,19 @@
 ---
-title: 🔑 Send a Image by Id
+title: 🔑 Send Image by ID
 ---
 
-Send a Image to the specified phone number using uploaded media.
+Send an image to the specified phone number using uploaded media.
 
 ```dart
 await whatsapp.sendImageById(
-  phoneNumber : 'PHONE_NUMBER',
-  mediaId : 'media_id',
-  caption : 'My fav photo.',
+  phoneNumber : 'RECIPIENT_NUMBER',
+  imageId : 'media_id',
+  caption : 'Sample Image.',
 );
 ```
 
 | param         | type   | required | description                             |
 | ------------- | ------ | -------- | --------------------------------------- |
-| `phoneNumber` | String | yes      | Phone number with county code and plus. |
-| `mediaId`     | String | yes      | Upload media id                         |
+| `phoneNumber` | String | yes      | Phone number with country code. |
+| `imageId`     | String | yes      | Uploaded media ID                       |
 | `caption`     | String | no       | A caption with image                    |

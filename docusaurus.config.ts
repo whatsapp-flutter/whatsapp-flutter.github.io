@@ -30,7 +30,6 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
   presets: [
     [
       'classic',
@@ -41,7 +40,7 @@ const config: Config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '3.0.0',
+              label: '4.0.0',
             },
           },
           // Please change this to your repo.

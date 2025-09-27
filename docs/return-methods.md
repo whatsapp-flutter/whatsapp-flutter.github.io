@@ -3,175 +3,85 @@ title: Return Methods
 sidebar_position: 3
 ---
 
-There multiple return method, will helps you to determine your request.
+There are multiple return methods that help you determine the status of your request.
 
-```dart
- var res = await whatsapp.sendMessage(
-     phoneNumber: '+91XXXXXXXXXX',
-     text: "Hello, this is a test message!"
- );
-```
+## Common Methods
 
-## isSuccess() `bool`
-
-Check if the request was successful. Returns true if the HTTP status code is between 200 => and < 300.
-
-:::info[Example]
-
-```dart
-res.isSuccess();
-// true
-```
-
+:::note
+These methods are supported across all methods
 :::
 
-## getHttpCode() `int`
+These methods are available in the base response class and commonly used across all response types.
 
-Get the HTTP status code.
+- **`isSuccess()`**: Checks if the operation was successful. This method should be implemented by subclasses to define what constitutes success for their specific response type.
 
-:::info[Example]
+- **`getFullResponse()`**: Returns the complete, raw JSON response from the API. Useful for debugging or accessing other data not directly exposed by this class's properties.
 
-```dart
-res.getHttpCode();
-// 200
-```
+- **`getErrorMessage()`**: Retrieves a descriptive error message if the operation failed. It parses the `error` field from the full response to return a human-readable message, or a generic message if no error is found.
 
-:::
+- **`getErrorCode()`**: Gets the numeric error code from a failed operation. Returns the `code` field from the error object in the API response, or `0` if the operation was successful.
 
-## getError() `String`
+- **`getErrorType()`**: Gets the type of error from a failed operation. Returns the `type` field from the error object in the API response, or an empty string if the operation was successful.
 
-Get HTTP Request error message.
 
-:::info[Example]
+## Messages Methods
 
-```dart
-res.getError();
-// An error occurred: ClientException: Failed to parse header value
-```
+These methods are specific to other response types such as messaging, templates, etc.
 
-:::
+- **`getMessageId()`**: Returns the unique ID of the sent message.
 
-## getErrorMessage() `String`
+- **`getContactId()`**: Returns the WhatsApp ID of the recipient contact.
 
-Get exact error message from whatsapp business api.
+## Media Methods
 
-:::info[Example]
+These methods are specific to media-related operations such as uploading, getting, or deleting media.
 
-```dart
-res.getErrorMessage();
-// The phone_number parameter is required.
-```
+- **`getMediaId()`**: Returns the WhatsApp ID of the uploaded or retrieved media.
 
-:::
+- **`getMediaUrl()`**: Returns the full URL of the media.
 
-## getMessageId() `String`
+- **`getMediaMimeType()`**: Returns the MIME type of the media.
 
-Get sent message whatsapp message id.
+- **`getMediaSha256()`**: Returns the SHA-256 hash of the media.
 
-:::info[Example]
+- **`getMediaFileSize()`**: Returns the file size of the media.
 
-```dart
-res.getMessageId();
-// wamid.HBgMOTE3MDIzMDQyMzA2FQIAERgSMDlCNTVGMUJFMkMxOTU1RUJEAA==
-```
+- **`isDeleted()`**: Checks if the media was deleted successfully. This method is deprecated and should be replaced with `isSuccess()`. It returns the result of calling `isSuccess()`.
 
-:::
+- **`isUploaded()`**: Deprecated. Calls `isSuccess()` and returns the result.
 
-## getPhoneNumber() `String`
+## Business Account Methods
 
-Get the phone number where message has been sent.
+These methods are specific to other response types such as messaging, business accounts, and user management.
 
-:::info[Example]
+- **`getAbout()`**: Returns the `about` field value or an empty string.
 
-```dart
-res.getPhoneNumber();
-// +91XXXXXXXXXX
-```
+- **`getAddress()`**: Returns the `address` field value or an empty string.
 
-:::
+- **`getDescription()`**: Returns the `description` field value or an empty string.
 
-## getResponse() `Map`
+- **`getEmail()`**: Returns the `email` field value or an empty string.
 
-Get response body from request.
-:::info[Example]
+- **`getProfilePictureUrl()`**: Returns the `profilePictureUrl` field value or an empty string.
 
-```dart
-res.getResponse();
-// {
-//    messaging_product: whatsapp,
-//    contacts: [{
-//        input: +91XXXXXXXXXX,
-//        wa_id: 91XXXXXXXXXX
-//    }],
-//    messages: [{
-//        id: wamid.HBgMOTE3MDIzMDQyMzA2FQIAERgSRkVCRTM5Q0UwQUIyOTE4NTEzAA==
-//    }]
-// }
-```
+- **`getVertical()`**: Returns the `vertical` field value or an empty string.
 
-:::
+- **`getWebsites()`**: Returns the `websites` field value or an empty string.
 
-## getMediaId() `String`
+## Users Block/Unblock Methods
 
-Get media id of uploaded media after upload.
+- **`isSomeSuccess()`**: Checks if some users were blocked (partial success). Returns `true` if there are failed users, indicating partial success.
 
-:::info[Example]
+- **`getUsersList()`**: Returns the list of blocked users.
 
-```dart
-res.getMediaId();
-// 1041224066853401
-```
+- **`getCursorBefore()`**: Returns the cursor for pagination to get the previous page of results.
 
-:::
+- **`getCursorAfter()`**: Returns the cursor for pagination to get the next page of results.
 
-## getMediaUrl() `String`
+## Resumable Methods
 
-Get public media url of uploaded media.
+- **`getId()`**: Returns the id of created resumable upload session.
 
-:::info[Example]
+- **`getH()`**: Returns the `h` id of uploaded image.
 
-```dart
-res.getMediaUrl();
-// https://lookaside.fbsbx.com/whatsapp_business/attachments/?mid=1041224066853401&ext=1721591487&hash=ATv7_iq0Tnoi1nO4eh06M7qF-fSHGa-QExcJEnkpOaCYOA
-```
-
-:::
-
-## getMediaMimeType() `String`
-
-Get Uploaded media MIME type.
-
-:::info[Example]
-
-```dart
-res.getMediaMimeType();
-// image/png
-```
-
-:::
-
-## getMediaSha256() `String`
-
-Get Uploaded media SHA-256 hash.
-
-:::info[Example]
-
-```dart
-res.getMediaSha256();
-// 4d2e172311d776ff44ff03ec1fdd86e05bb6c2fbc8c9a0595e48fd7cbacba6ba
-```
-
-:::
-
-## getMediaFileSize() `String`
-
-Get media file size in bytes
-
-:::info[Example]
-
-```dart
-res.getMediaFileSize();
-// 187604
-```
-
-:::
+- **`getFileOffset()`**: Returns the file size in bytes of created resumable upload session.

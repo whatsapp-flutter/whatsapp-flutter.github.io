@@ -18,7 +18,7 @@ await whatsapp.sendTemplate(
 
 | param         | type                         | required | description                             |
 | ------------- | ---------------------------- | -------- | --------------------------------------- |
-| `phoneNumber` | String                       | yes      | Phone number with county code and plus. |
+| `phoneNumber` | String                       | yes      | Phone number with county code. |
 | `template`    | String                       | yes      | A template id                           |
 | `language`    | String                       | yes      | lang code (ex. en_US)                   |
 | `placeholder` | List\<Map\<String, dynamic>> | no       | Placeholder variables for template      |

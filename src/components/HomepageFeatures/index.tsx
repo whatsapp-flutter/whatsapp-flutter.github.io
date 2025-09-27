@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { JSX } from 'react';
 
 type FeatureItem = {
   title: string;
@@ -10,29 +11,56 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy Documentation',
+    title: 'Send Messages & Media',
     Svg: require('@site/static/img/undraw_join_re_w1lh.svg').default,
     description: (
       <>
-         We comes with a well-documented API, making it easy to integrate into your Flutter applications.
+        Send text messages, images, videos, documents, audio files, stickers, and contacts with simple API calls.
       </>
     ),
   },
   {
-    title: 'So Many Methods',
+    title: 'Interactive Elements',
     Svg: require('@site/static/img/undraw_search_app_oso2.svg').default,
     description: (
       <>
-        Package supports multiple services like messages, media, location and more.
+        Create buttons, lists, reply buttons, and flows to engage users interactively through WhatsApp.
       </>
     ),
   },
   {
-    title: 'Easy Use Methods',
+    title: 'Business Profile Management',
     Svg: require('@site/static/img/undraw_make_it_rain_re_w9pc.svg').default,
     description: (
       <>
-        We provide easy-to-use methods with use full and less property only.
+        Update business profiles, manage catalogs, send product messages, and handle customer interactions.
+      </>
+    ),
+  },
+  {
+    title: 'Template Messages',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    description: (
+      <>
+        Send authenticated template messages for marketing, notifications, and transactional communications.
+      </>
+    ),
+  },
+  {
+    title: 'Location & Media Handling',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    description: (
+      <>
+        Share locations, upload media by URL or file, manage media lifecycle, and request user locations.
+      </>
+    ),
+  },
+  {
+    title: 'User Management',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Register numbers, verify codes, block/unblock users, and manage user interactions seamlessly.
       </>
     ),
   },

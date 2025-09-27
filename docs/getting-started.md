@@ -6,28 +6,30 @@ sidebar_position: 1
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<p align="center"><img src="https://raw.githubusercontent.com/rohit-chouhan/whatsapp/main/img/banner.png"/></p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rohit-chouhan/whatsapp/main/img/whatsapp-flutter-banner-v4.png" alt="WhatsApp Flutter Banner"/>
+</p>
 
-This Flutter package allows you to integrate the WhatsApp Business API into your Flutter applications, enabling features such as sending `messages`, `media`, `templates`, `business information`, `interactives`, and more.
+This Flutter package provides seamless integration with the WhatsApp Business API, enabling developers to send messages, media, templates, manage business profiles, create interactive elements and flows, and share catalog messages within Flutter applications. The package supports the latest WhatsApp Business API version 23.0.
 
 ![Pub Likes](https://img.shields.io/pub/likes/whatsapp)
 ![Pub Points](https://img.shields.io/pub/points/whatsapp)
-![Pub Popularity](https://img.shields.io/pub/popularity/whatsapp)
-![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/rohit-chouhan/whatsapp)
-![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/rohit-chouhan/whatsapp)
-![GitHub License](https://img.shields.io/github/license/rohit-chouhan/whatsapp)
-![GitHub forks](https://img.shields.io/github/forks/rohit-chouhan/whatsapp)
+![Pub Monthly Downloads](https://img.shields.io/pub/dm/whatsapp)
+![GitHub Issues](https://img.shields.io/github/issues/rohit-chouhan/whatsapp)
+![GitHub PRs](https://img.shields.io/github/issues-pr/rohit-chouhan/whatsapp)
+![GitHub Forks](https://img.shields.io/github/forks/rohit-chouhan/whatsapp)
 
-For a comprehensive understanding of the WhatsApp Business Cloud API, please refer to the official documentation available here : <a href="https://developers.facebook.com/docs/whatsapp/cloud-api/"> WhatsApp Business Cloud API</a>
+For a comprehensive guide to the **WhatsApp Business Cloud API**, refer to the official documentation:  
+[WhatsApp Business Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/)
 
 ## Installation Options
 
-:::tip[Choose your option]
+:::tip Choose the method that suits you
 <Tabs>
 <TabItem value="copy_version" label="Copy Version" default>
 
 ```bash
-whatsapp: ^3.0.0
+whatsapp: ^4.0.0
 ```
 
   </TabItem>
@@ -37,11 +39,11 @@ flutter pub add whatsapp
 ```
   </TabItem>
   <TabItem value="pubspec" label="pubspec.yaml">
-   or copy this code into your `pubspec.yaml` file.
+   You can also copy the following snippet into your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  whatsapp: ^3.0.0
+  whatsapp: ^4.0.0
 ```
 
   </TabItem>
@@ -50,7 +52,7 @@ dependencies:
 
 ## Import
 
-Now in your Dart code, you can use:
+In your Dart code, import the package like this:
 
 ```dart
 import 'package:whatsapp/whatsapp.dart';

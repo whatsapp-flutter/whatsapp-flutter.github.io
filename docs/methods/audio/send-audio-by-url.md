@@ -1,17 +1,17 @@
 ---
-title: 🔗 Send a Audio by URL
+title: 🔗 Send Audio by URL
 ---
 
-Send a audio to the specified phone number using direct audio link.
+Send audio to the specified phone number using direct audio link.
 
 ```dart
 await whatsapp.sendAudioByUrl(
-  phoneNumber : 'PHONE_NUMBER',
-  audioUrl : 'https://whatsapp-flutter.github.io/samples/whatsapp-flutter.mp3',
+  phoneNumber : 'RECIPIENT_NUMBER',
+  audioUrl : 'https://whatsapp-flutter.github.io/samples/sample.mp3',
 );
 ```
 
 | param         | type   | required | description                             |
 | ------------- | ------ | -------- | --------------------------------------- |
-| `phoneNumber` | String | yes      | Phone number with county code and plus. |
-| `audioUrl`    | String | yes      | Direct audio url                        |
+| `phoneNumber` | String | yes      | Phone number with country code. |
+| `audioUrl`    | String | yes      | Direct audio URL                        |

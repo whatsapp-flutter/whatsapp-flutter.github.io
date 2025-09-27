@@ -23,5 +23,5 @@ await whatsapp.sendCustomRequest(
 
 | param     | type                   | required | description                          |
 | --------- | ---------------------- | -------- | ------------------------------------ |
-| `path`    | String                 | yes      | Path Url of Request. `ex. /messages` |
-| `payload` | Map\<String, dynamic\> | yes      | Body Request                         |
+| `path`    | String                 | yes      | Path URL of the request. E.g., /messages |
+| `payload` | Map\<String, dynamic\> | yes      | Body request                         |

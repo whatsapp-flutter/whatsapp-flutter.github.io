@@ -14,5 +14,5 @@ await whatsapp.sendSticker(
 
 | param         | type   | required | description                             |
 | ------------- | ------ | -------- | --------------------------------------- |
-| `phoneNumber` | String | yes      | Phone number with county code and plus. |
+| `phoneNumber` | String | yes      | Phone number with county code. |
 | `stickerId`   | String | yes      | ID of Sticker                           |

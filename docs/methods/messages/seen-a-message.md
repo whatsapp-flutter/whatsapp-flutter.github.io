@@ -3,7 +3,7 @@ title: 👁‍🗨 Mark as Read
 sidebar_position: 8
 ---
 
-Read (Seen) the messages received by the specified phone number, using message id.
+Mark messages as read (seen) for the specified phone number using message ID.
 
 ```dart
 await whatsapp.markAsRead(
@@ -13,4 +13,6 @@ await whatsapp.markAsRead(
 
 | param       | type   | required | description  |
 | ----------- | ------ | -------- | ------------ |
-| `messageId` | String | yes      | A message id |
+| `messageId` | String | yes      | A message ID |
+
+

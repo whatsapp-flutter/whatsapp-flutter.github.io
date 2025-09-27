@@ -2,11 +2,11 @@
 title: 📋 Send List
 ---
 
-Send a list option, user to choose.
+Send a list for the user to choose from.
 
 ```dart
 await whatsapp.sendInteractiveLists(
-    phoneNumber: 'PHONE_NUMBER',
+    phoneNumber: 'RECIPIENT_NUMBER',
     headerText: "Welcome Dear",
     bodyText: "Choose your favorite animal",
     footerText: "Please choose only one",
@@ -55,7 +55,7 @@ await whatsapp.sendInteractiveLists(
 
 | param         | type                           | required | description                             |
 | ------------- | ------------------------------ | -------- | --------------------------------------- |
-| `phoneNumber` | String                         | yes      | Phone number with county code and plus. |
+| `phoneNumber` | String                         | yes      | Phone number with country code. |
 | `headerText`  | String                         | no       | Header Text                             |
 | `bodyText`    | String                         | yes      | Body Text                               |
 | `footerText`  | String                         | no       | Footer Text                             |

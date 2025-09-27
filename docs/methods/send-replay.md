@@ -1,41 +1,41 @@
 ---
-title: 📢 Replay a message
+title: 📢 Reply to a message
 sidebar_position: 16
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Send replay to a specific message
+Send reply to a specific message
 
 ```dart
-await whatsapp.replay(
-    phoneNumber: 'PHONE_NUMBER',
+await whatsapp.reply(
+    phoneNumber: 'RECIPIENT_NUMBER',
     messageId: 'MESSAGE_ID',
-    replay: Replay().text("Thank for contacting us", true),
+    reply: reply().text("Thanks for contacting us", true),
 );
 ```
 
 | param         | type                   | required | description                             |
 | ------------- | ---------------------- | -------- | --------------------------------------- |
-| `phoneNumber` | String                 | yes      | Phone number with county code and plus. |
-| `messageId`   | String                 | yes      | A message id                            |
-| `replay`      | Map\<String, dynamic\> | yes      | Replay Content                          |
+| `phoneNumber` | String                 | yes      | Phone number with country code. |
+| `messageId`   | String                 | yes      | A message ID                            |
+| `reply`      | Map\<String, dynamic\> | yes      | Reply content                          |
 
-## Replay
+## reply
 
-For replay to a specific message, you can use `Replay` class methods, our you can use custom json object.
+For reply to a specific message, you can use `reply` class methods, or you can use custom JSON object.
 
-Here is predefined methods for Replay:
+Here is predefined methods for reply:
 
 :::tip[Text]
 <Tabs>
-<TabItem value="text" label="Send Text Replay" default>
+<TabItem value="text" label="Send Text reply" default>
 
 ```dart
-Replay().text(
-    "Thank for contacting us", //Replay Text
-    true, //Url preview
+reply().text(
+    "Thanks for contacting us", //reply Text
+    true, //URL preview
 );
 ```
 
@@ -48,7 +48,7 @@ Replay().text(
 <TabItem value="image_by_id" label="By Image Id" default>
 
 ```dart
-Replay().imageById(
+reply().imageById(
     "1100XXXXXXXXXXXXX", //Image Media ID
 );
 ```
@@ -57,8 +57,8 @@ Replay().imageById(
   <TabItem value="image_by_URL" label="By Image Url" default>
 
 ```dart
-Replay().imageByUrl(
-    "https:://example.com/sample.jpg", //Image direct url
+reply().imageByUrl(
+    "https://example.com/sample.jpg", //Image direct url
 );
 ```
 
@@ -71,7 +71,7 @@ Replay().imageByUrl(
 <TabItem value="Audio_by_id" label="By Audio Id" default>
 
 ```dart
-Replay().audioById(
+reply().audioById(
     "1100XXXXXXXXXXXXX", //Audio Media ID
 );
 ```
@@ -80,8 +80,8 @@ Replay().audioById(
   <TabItem value="Audio_by_URL" label="By Audio Url" default>
 
 ```dart
-Replay().audioByUrl(
-    "https:://example.com/sample.mp3", //Audio direct url
+reply().audioByUrl(
+    "https://example.com/sample.mp3", //Audio direct url
 );
 ```
 
@@ -94,7 +94,7 @@ Replay().audioByUrl(
 <TabItem value="Video_by_id" label="By Video Id" default>
 
 ```dart
-Replay().videoById(
+reply().videoById(
     "1100XXXXXXXXXXXXX", //Video Media ID
 );
 ```
@@ -103,8 +103,8 @@ Replay().videoById(
   <TabItem value="Video_by_URL" label="By Video Url" default>
 
 ```dart
-Replay().videoByUrl(
-    "https:://example.com/sample.mp4", //Video direct url
+reply().videoByUrl(
+    "https://example.com/sample.mp4", //Video direct url
 );
 ```
 
@@ -117,7 +117,7 @@ Replay().videoByUrl(
 <TabItem value="Document_by_id" label="By Document Id" default>
 
 ```dart
-Replay().documentById(
+reply().documentById(
     "1100XXXXXXXXXXXXX", //Document Media ID
 );
 ```
@@ -126,8 +126,8 @@ Replay().documentById(
   <TabItem value="Document_by_URL" label="By Document Url" default>
 
 ```dart
-Replay().documentByUrl(
-    "https:://example.com/sample.pdf", //Document direct url
+reply().documentByUrl(
+    "https://example.com/sample.pdf", //Document direct url
 );
 ```
 
@@ -140,10 +140,10 @@ You can pass your custom object as well.
 Find documentation here [https://developers.facebook.com/docs/whatsapp/cloud-api/guides/send-messages/#replies](https://developers.facebook.com/docs/whatsapp/cloud-api/guides/send-messages/#replies)
 
 ```dart
-await whatsapp.replay(
-    phoneNumber: 'PHONE_NUMBER',
+await whatsapp.reply(
+    phoneNumber: 'RECIPIENT_NUMBER',
     messageId: 'MESSAGE_ID',
-    replay: {
+    reply: {
         "type":"image",
         "image" : {
             "link" :"https://example.com/sample.jpg"

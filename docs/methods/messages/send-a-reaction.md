@@ -7,7 +7,7 @@ Send emoji reaction to a message.
 
 ```dart
 await whatsapp.sendReaction(
-  phoneNumber : 'PHONE_NUMBER',
+  phoneNumber : 'RECIPIENT_NUMBER',
   messageId : 'MESSAGE_ID',
   emoji: '👍'
 );
@@ -15,6 +15,6 @@ await whatsapp.sendReaction(
 
 | param         | type   | required | description                             |
 | ------------- | ------ | -------- | --------------------------------------- |
-| `phoneNumber` | String | yes      | Phone number with county code and plus. |
+| `phoneNumber` | String | yes      | Phone number with country code. |
 | `messageId`   | String | yes      | Message ID                              |
 | `emoji`       | String | yes      | Emoji symbol or Unicode escape sequence |

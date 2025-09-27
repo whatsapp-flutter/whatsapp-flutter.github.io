@@ -6,17 +6,17 @@ Send specific location to user.
 
 ```dart
 await whatsapp.sendLocation(
-  phoneNumber: 'PHONE_NUMBER',
-  latitude: 25.197197,
-  longitude: 55.2743764,
-  name: "Burj Khalifa",
-  address:"1 Sheikh Mohammed bin, United Arab Emirates"
+  phoneNumber: 'RECIPIENT_NUMBER',
+  latitude: 40.7580,
+  longitude: -73.9855,
+  name: "Times Square",
+  address: "Manhattan, NY 10036, United States"
 );
 ```
 
 | param         | type   | required | description                             |
 | ------------- | ------ | -------- | --------------------------------------- |
-| `phoneNumber` | String | yes      | Phone number with county code and plus. |
+| `phoneNumber` | String | yes      | Phone number with country code. |
 | `latitude`    | double | yes      | Location Latitude                       |
 | `longitude`   | double | yes      | Location Longitude                      |
 | `name`        | String | no       | Location Name                           |

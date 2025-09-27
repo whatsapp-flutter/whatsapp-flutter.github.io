@@ -20,4 +20,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+
+.quickStart {
+  padding: 4rem 0;
+  background-color: var(--ifm-color-emphasis-50);
+}
+
+.whyUse {
+  padding: 4rem 0;
+}
+
+.whyUse h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.whyUse p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 996px) {
+  .quickStart,
+  .whyUse {
+    padding: 2rem 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
 }

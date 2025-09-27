@@ -1,12 +1,12 @@
 ---
-title: 🖲 Send Replay Button
+title: 🖲 Send Reply Button
 ---
 
-Send a Replay Button Actions.
+Send reply button actions.
 
 ```dart
-await whatsapp.sendInteractiveReplayButton(
-    phoneNumber: 'PHONR_NUMBER',
+await whatsapp.sendInteractiveReplyButton(
+    phoneNumber: 'RECIPIENT_NUMBER',
     headerInteractive: {
         "type": "image",
         "image": {
@@ -35,7 +35,7 @@ await whatsapp.sendInteractiveReplayButton(
 
 | param                     | type                           | required | description                             |
 | ------------------------- | ------------------------------ | -------- | --------------------------------------- |
-| `phoneNumber`             | String                         | yes      | Phone number with county code and plus. |
+| `phoneNumber`             | String                         | yes      | Phone number with country code. |
 | `headerInteractive`       | Map\<String, dynamic\>         | yes      | Header content                          |
 | `bodyText`                | String                         | yes      | Body content                            |
 | `footerText`              | String                         | yes      | Footer content                          |
@@ -43,7 +43,7 @@ await whatsapp.sendInteractiveReplayButton(
 
 ## headerInteractive
 
-Header is part of message, which will be shown in top of message.
+The header is part of the message, shown at the top.
 
 Supports the following types:
 
@@ -60,7 +60,7 @@ You can provide map values of given types, and use `media_id` or `link`.
 {
   "type": "image",
   "image": {
-    "to": "media_id"
+    "id": "media_id"
   }
 }
 ```
@@ -79,8 +79,8 @@ You can provide map values of given types, and use `media_id` or `link`.
 ## interactiveReplyButtons
 
 - `type` : The type field specifies the kind of interactive element. For reply buttons, the type is always set to "reply".
-- `replay`: The reply object contains the id and title of the button. This is the actual content of the button that the user sees and interacts with.
-  - `Id` : The id is a unique identifier for each button. It is used to distinguish between different buttons within the same or different messages. This id is usually a string.
+- `reply`: The reply object contains the id and title of the button. This is the actual content of the button that the user sees and interacts with.
+  - `id` : The id is a unique identifier for each button. It is used to distinguish between different buttons within the same or different messages. This id is usually a string.
   - `title` :The title is the text that appears on the button. It is a short, descriptive label that indicates the action that will be taken when the button is pressed.
 
 :::tip Need more help?

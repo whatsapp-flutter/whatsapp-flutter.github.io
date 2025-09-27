@@ -6,12 +6,12 @@ sidebar_position: 1
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Generate direct link for whatsapp
+Generate direct link for WhatsApp
 
 ```dart
 whatsapp.getLink(
-    phoneNumber : "+91XXXXXXXXXX",
-    message = 'Hy Johnny, How Are You.',
+    phoneNumber : 'RECIPIENT_NUMBER',
+    message = 'Hi Johnny, how are you?',
     shortLink = false,
     bold : ["Johnny"] ,
     italic : ["How"],
@@ -25,14 +25,14 @@ whatsapp.getLink(
 <TabItem value="false" label="shortLink = false" default>
 
 ```bash
-https://api.whatsapp.com/send?phone=91XXXXXXXXXX&text=Hy%20%2AJohnny%2A%2C%20_How_%20~Are~%20%60%60%60You%60%60%60.%0A
+https://api.whatsapp.com/send?phone=91XXXXXXXXXX&text=Hi%20%2AJohnny%2A%2C%20_How_%20~Are~%20%60%60%60You%60%60%60.%0A
 ```
 
   </TabItem>
   <TabItem value="true" label="shortLink = true">
 
 ```bash
-https://wa.me/91XXXXXXXXXX&text=Hy%20%2AJohnny%2A%2C%20_How_%20~Are~%20%60%60%60You%60%60%60.%0A
+https://wa.me/91XXXXXXXXXX&text=Hi%20%2AJohnny%2A%2C%20_How_%20~Are~%20%60%60%60You%60%60%60.%0A
 ```
 
   </TabItem>
@@ -41,9 +41,9 @@ https://wa.me/91XXXXXXXXXX&text=Hy%20%2AJohnny%2A%2C%20_How_%20~Are~%20%60%60%60
 
 | param           | type           | required | description                                  |
 | --------------- | -------------- | -------- | -------------------------------------------- |
-| `phoneNumber`   | String         | yes      | Phone number with county code and plus.      |
+| `phoneNumber`   | String         | yes      | Phone number with country code.      |
 | `message`       | String         | no       | A message to send                            |
-| `shortLink`     | bool           | no       | Make link shorten `default: false`           |
+| `shortLink`     | bool           | no       | Make link short (default: false)             |
 | `bold`          | List\<String\> | no       | List of Text to add Bold formatting          |
 | `italic`        | List\<String\> | no       | List of Text to add italic formatting        |
 | `strikethrough` | List\<String\> | no       | List of Text to add strikethrough formatting |

@@ -3,11 +3,11 @@ title: ☎️ Send a Contact
 sidebar_position: 3
 ---
 
-Send a contact details to the specified phone number
+Send contact details to the specified phone number
 
 ```dart
 await whatsapp.sendContactDetails(
-    phoneNumber: 'PHONE_NUMBER',
+    phoneNumber: 'RECIPIENT_NUMBER',
     dateOfBirth: "1990-01-01",
     addresses: [{
         "street": "Ajmer",
@@ -48,11 +48,11 @@ await whatsapp.sendContactDetails(
 
 | param          | type                           | required | description                             |
 | -------------- | ------------------------------ | -------- | --------------------------------------- |
-| `phoneNumber`  | String                         | yes      | Phone number with county code and plus. |
+| `phoneNumber`  | String                         | yes      | Phone number with country code. |
 | `dateOfBirth`  | String                         | no       | Date of Birth `YYYY-MM-DD`              |
 | `addresses`    | List\<Map\<String, dynamic\>\> | no       | List of Address                         |
 | `emails`       | List\<Map\<String, dynamic\>\> | no       | List of Emails                          |
 | `organization` | Map\<String, dynamic\>         | no       | Organization Details                    |
 | `person`       | Map\<String, dynamic\>         | yes      | Person Information                      |
-| `phone`        | List\<Map\<String, dynamic\>\> | yes      | Phone Details                           |
-| `url`          | List\<Map\<String, dynamic\>\> | no       | List of Webpages                        |
+| `phones`       | List\<Map\<String, dynamic\>\> | yes      | Phone Details                           |
+| `urls`         | List\<Map\<String, dynamic\>\> | no       | List of Webpages                        |

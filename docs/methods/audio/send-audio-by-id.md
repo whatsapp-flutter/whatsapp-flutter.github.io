@@ -1,17 +1,17 @@
 ---
-title: 🔑 Send a Audio by Id
+title: 🔑 Send Audio by ID
 ---
 
-Send a audio to the specified phone number using uploaded media.
+Send audio to the specified phone number using uploaded media.
 
 ```dart
 await whatsapp.sendAudioById(
-  phoneNumber : 'PHONE_NUMBER',
-  mediaId : 'media_id',
+  phoneNumber : 'RECIPIENT_NUMBER',
+  audioId : 'media_id',
 );
 ```
 
 | param         | type   | required | description                             |
 | ------------- | ------ | -------- | --------------------------------------- |
-| `phoneNumber` | String | yes      | Phone number with county code and plus. |
-| `mediaId`     | String | yes      | Uploaded audio's media id               |
+| `phoneNumber` | String | yes      | Phone number with country code. |
+| `audioId`     | String | yes      | Uploaded audio's media ID               |
