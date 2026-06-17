@@ -40,7 +40,7 @@ const config: Config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '4.0.0',
+              label: '4.0.1',
             },
           },
           // Please change this to your repo.

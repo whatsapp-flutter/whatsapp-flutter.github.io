@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
   <img src="https://raw.githubusercontent.com/rohit-chouhan/whatsapp/main/img/whatsapp-flutter-banner-v4.png" alt="WhatsApp Flutter Banner"/>
 </p>
 
-This Flutter package provides seamless integration with the WhatsApp Business API, enabling developers to send messages, media, templates, manage business profiles, create interactive elements and flows, and share catalog messages within Flutter applications. The package supports the latest WhatsApp Business API version 25.0.
+This Flutter package provides seamless integration with the WhatsApp Business API, enabling developers to send messages, media, templates, manage business profiles, create interactive elements and flows, and share catalog messages within Flutter applications. The package supports the latest WhatsApp Business API version 23.0.
 
 ![Pub Likes](https://img.shields.io/pub/likes/whatsapp)
 ![Pub Points](https://img.shields.io/pub/points/whatsapp)
@@ -29,7 +29,7 @@ For a comprehensive guide to the **WhatsApp Business Cloud API**, refer to the o
 <TabItem value="copy_version" label="Copy Version" default>
 
 ```bash
-whatsapp: ^4.0.1
+whatsapp: ^4.0.0
 ```
 
   </TabItem>
@@ -43,7 +43,7 @@ flutter pub add whatsapp
 
 ```yaml
 dependencies:
-  whatsapp: ^4.0.1
+  whatsapp: ^4.0.0
 ```
 
   </TabItem>

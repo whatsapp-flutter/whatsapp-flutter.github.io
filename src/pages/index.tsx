@@ -18,7 +18,7 @@ function HomepageHeader() {
           #1 Flutter Package for WhatsApp Business API
         </Heading>
         <p className="hero__subtitle">
-          Seamlessly integrate WhatsApp Business API into your Flutter apps. Send messages, media, templates, manage business profiles, create interactive flows, and more with the latest API v23.0 support.
+          Seamlessly integrate WhatsApp Business API into your Flutter apps. Send messages, media, templates, manage business profiles, create interactive flows, and more with the latest API v25.0 support.
         </p>
         <div className={styles.buttons}>
           <Link
@@ -48,7 +48,7 @@ function QuickStart() {
               Get started with WhatsApp Business API integration in just a few steps:
             </p>
             <ol>
-              <li>Add the package to your pubspec.yaml: <code>whatsapp: ^4.0.0</code></li>
+              <li>Add the package to your pubspec.yaml: <code>whatsapp: ^4.0.1</code></li>
               <li>Import the package: <code>import 'package:whatsapp/whatsapp.dart';</code></li>
               <li>Initialize with your API credentials</li>
               <li>Start sending messages and media!</li>
@@ -81,7 +81,7 @@ function WhyUseIt() {
         <div className="row">
           <div className="col col--4">
             <h3>🚀 Latest API Support</h3>
-            <p>Always updated with the latest WhatsApp Business API features and v23.0 compatibility.</p>
+            <p>Always updated with the latest WhatsApp Business API features and v25.0 compatibility.</p>
           </div>
           <div className="col col--4">
             <h3>📚 Comprehensive Documentation</h3>

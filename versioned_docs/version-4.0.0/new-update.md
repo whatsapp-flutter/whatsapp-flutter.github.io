@@ -4,18 +4,10 @@ sidebar_position: 5
 ---
 
 :::success **WhatsApp API Support Upgraded**
-This package now fully supports the latest **WhatsApp API version `v25.0`**, ensuring all features and endpoints work seamlessly with improved performance and stability.
+This package now fully supports the latest **WhatsApp API version `v23.0`**, ensuring all features and endpoints work seamlessly with improved performance and stability.
 :::
 
-## ✨ New in 4.0.1
-- **API Upgrade:** Upgraded API version to `v25.0`.
-- **Refactoring:** Massively refactored 15 service classes for improved module cohesion and reduced duplicated exception handling.
-- **Bug Fixes:** 
-  - Fixed `updateBusinessProfile` missing `address` field mapping.
-  - Fixed token header parsing issues (`Failed to parse header value`).
-  - Fixed outdated code in package example and `README.md`.
-
-## ⚡ Breaking Changes (4.0.0)
+## ⚡ Breaking Changes
 - Corrected typo: `replay` methods renamed to `reply` for consistency.
 - Added support for `web` platforms.  
 
